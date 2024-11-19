@@ -22,3 +22,14 @@ Criar um esquema conceitual para o contexto de oficina com base na narrativa for
  - OS-Item de Serviço: Uma ordem de serviço pode ter muitos serviços associados (1:N).
  - OS-Item de Peça: Uma ordem de serviço pode ter muitas peças associadas (1:N).
 
+#### Fluxo: 
+
+- Entrada do Cliente: Cliente registra o Veículo.
+- Criação da OS: Veículo é avaliado e uma OS é criada com os serviços e peças necessárias.
+- Consulta de Valores: Tabela de mão de obra e preços de peças são utilizados para calcular o custo total.
+- Autorização: O Cliente autoriza a execução da OS.
+- Execução: A equipe de Mecânicos realiza os serviços.
+- Conferência e Conclusão: OS é finalizada com status atualizado.
+
+  ![oficina](https://github.com/user-attachments/assets/d833f7c8-898b-4c5b-8f4e-6ee642810397)
+
