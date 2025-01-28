@@ -11,13 +11,15 @@ O banco de dados utilizado passou por uma profunda limpeza e transformação no 
 - **Salário:** Padronização do campo `Salary` em formato decimal fixo.
 - **Gerentes:** Funcionários foram associados aos seus gerentes; valores nulos em `Super_ssn` foram substituídos pela palavra "Gerente".
 
-### 2. **Mesclagem com `Department`**
+### 2. **Mesclagem**
+
+#### 2.1.  `Department`
 - A tabela de funcionários foi mesclada com a tabela `Department`, mantendo apenas o nome do departamento, facilitando a análise.
 
-### 3. **Mesclagem com `Dept_Locations`**
+#### 2.2.  `Dept_Locations`
 - Mesclamos os dados com a tabela `Dept_Locations`, deixando apenas a localização do departamento visível, para maior clareza sobre onde cada setor está localizado.
 
-### 4. **Mesclagem com `Project`**
+#### 2.3. `Project`
 - Por fim, os dados foram mesclados com a tabela de projetos, unificando informações de localização, horas trabalhadas e associação de funcionários a projetos. Registros com horas zeradas foram removidos, resultando em uma análise mais precisa.
 
 <br>
@@ -28,14 +30,11 @@ O banco de dados utilizado passou por uma profunda limpeza e transformação no 
 
 Nosso dashboard foi desenhado para oferecer uma experiência intuitiva e rica em detalhes. Aqui estão os principais insights:
 
-- **📊 Média Salarial:** R$35,13 mil, proporcionando uma visão clara da remuneração dos colaboradores.
-- **👥 Contagem de Funcionários:** A empresa conta atualmente com 8 funcionários.
-- **🏢 Funcionários por Departamento:** Um gráfico de radar interativo mostra a distribuição dos funcionários por departamentos, como:
+- **Média Salarial:** R$35,13 mil, proporcionando uma visão clara da remuneração dos colaboradores.
+- **Contagem de Funcionários:** A empresa conta atualmente com 8 funcionários.
+- **Funcionários por Departamento:** Um gráfico de radar interativo mostra a distribuição dos funcionários por departamentos, como:
   - Research (27)
   - Administration (12)
   - Headquarters (1)
-- **📈 Salário por Departamento:** Comparação das médias salariais entre departamentos, utilizando um gráfico de barras.
-- **👶 Dependentes por Funcionário:** Visualize facilmente a quantidade de dependentes por colaborador.
-- **🍕 Proporção de Funcionários:** Um gráfico de pizza revela a proporção de funcionários por setor, permitindo uma visão rápida da distribuição interna.
 
 <br>
